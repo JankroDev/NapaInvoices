@@ -1,0 +1,132 @@
+.pageHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100vw;
+}
+
+.pageHeaderAccount {
+  width: 100vw;
+  height: 100%;
+  background-color: #0d2c89;
+  text-align: center;
+}
+
+.pageHeaderAccountWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  max-width: max-content;
+}
+
+.pageHeaderAccountText {
+  color: #f0b617;
+  font-size: 48px;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.accountDateSearch {
+  display: grid;
+  padding: 5px;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.accountDateSearchText {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.columnHeader {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  width: 100vw;
+  border-color: #20232a;
+  border-radius: 6px;
+  background-color: #242c53;
+}
+
+.sortButton {
+  background-color: #242c53;
+  color: white;
+}
+
+.columnFooter {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100vw;
+  background-color: hsl(163, 5%, 71%);
+}
+
+.columnHeaderText {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  padding-right: 10px;
+}
+
+.columnHeaderRow {
+  gap: 5px;
+  padding: 2px;
+}
+
+.headerImage {
+  width: 100vw;
+  height: auto;
+}
+
+.invoiceViewRow {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 1fr;
+  margin: 1px;
+  width: 100vw;
+  border-color: #20232a;
+  background-color: #afc0de;
+}
+
+.uploadInvoiceViewRow {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: max-content;
+  margin: 1px;
+  width: 100vw;
+  border-color: #20232a;
+  background-color: #afc0de;
+}
+
+.invoiceViewText {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.translate {
+  overflow: hidden;
+  transition: 0.5s;
+  animation: storefrontmove 4s infinite;
+}
+
+.storefrontimage {
+  background: url("./images/storefront.jpg") repeat-x;
+  position: fixed;
+  left: 1px;
+  zoom: 1.8;
+  top: -225px;
+  height: 100vh;
+  width: 7680px;
+  animation: slide 200s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}
